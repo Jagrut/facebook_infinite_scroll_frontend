@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Facebook replication by jagrut</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Optional theme -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+    <style>
+    .logo {
+        background-image: url(https://www.facebook.com/rsrc.php/v3/yG/r/KeOCXMR_73K.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 0 -251px;
+        display: block;
+        height: 24px;
+        outline: none;
+        overflow: hidden;
+        text-indent: -999px;
+        white-space: nowrap;
+        width: 24px;
+    }
+    .float_left{
+       float:left;
+    }
+    
+    #sidebar1{
+       width:30%;
+       position:fixed;
+       display:block;
+       width:30%;
+       background-color:#ffffff;
+       height:100%;
+       padding-right:20px;
+    }
+    #content{
+       width:40%;
+    }
+    #sidebar2{
+       width:30%;
+       position:fixed;
+       margin-left:70%;
+       display:block;   
+       background-color:#ffffff;
+       height:100%;
+       padding-left: 9px;
+    }
+    .infinite-list-item {
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        width: 120px;
+        margin: auto;
+    	display:block;
+    	overflow:hidden;
+    }
+    #custom-bootstrap-menu {
+        
+        background-color: #6848c7;
+    	color:#ffffff;
+    }
+    #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+        color: rgba(255, 255, 255, 1);
+    }
+    .navbar-header{
+        padding-left:20%;
+    }
+    #right-align{
+        padding-right:20%;
+    }
+    #infinite-content{
+        margin-left:30%;
+        width:40%;
+    }
+    </style>
+</head>
+<body>
+
+<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar-header">
+    <a href="#" class="navbar-brand"><span class="logo">Facebook</span></a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".merger">
+      <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>    
+  </div>
+  <!--<a class="navbar-brand" href="#">Brand</a>-->
+  <div class="navbar-collapse collapse merger" id="bs-example-navbar-collapse-1" style="marging-left:30%;">
+    <ul class="nav navbar-nav navbar-left" id="left-align">
+	    <li></li>
+        <li><a href="#">Link1</a></li>
+        <li><a href="#about">Link2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" id="right-align">
+      <li><a href="#about">Link3</a></li>
+      <li><a href="#contact">Link4</a></li>
+	  <li><a href="#"><i class="fa fa-search"></i></a> </ii>
+      <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+      <li><a href="#"><i class="fa fa-globe"></i></a></li>
+      <li><a href="#"><i class="fa fa-trash"></i></a></li> 
+    </ul>
+  </div>
+</div>
+<br>
+<div style="background-color:rgba(124, 146, 127, 0.14);">
+  <div id="inner" style="margin-top:60px;">
+    <div id="sidebar1" class="float_left merger">
+	  
+       <ul class="nav nav-pills nav-stacked navbar-right" >
+           <li><a href="#">sidebarlink1</a></li>
+           <li><a href="#">sidebar1ink2</a></li>
+           <li><a href="#">sidebarlink3</a></li>
+       </ul>
+      
+	</div>
+	<div id="sidebar2" class="float_left">
+	   
+	   <ul class="nav nav-pills nav-stacked navbar-left">
+		  <li><a href="#">sidebar2link1</a></li>
+		  <li><a href="#">sidebar2link2</a></li>
+		  <li><a href="#">sidebar2link3</a></li>
+		</ul>
+      
+	</div>
+    <div id="infinite-content">
+	</div>
+    
+  </div>
+</div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- react libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/JSXTransformer.js"></script>
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react-dom.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="react-infinite.min.js"></script>
+<script type="text/javascript" src="mobile_desktop.js"></script>
+<script type="text/jsx" src="infinite_scroll_content_loader.jsx"></script>
+</body>
+</html>

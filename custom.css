@@ -1,0 +1,66 @@
+.logo {
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yG/r/KeOCXMR_73K.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -251px;
+    display: block;
+    height: 24px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    white-space: nowrap;
+    width: 24px;
+}
+.float_left{
+   float:left;
+}
+
+#sidebar1{
+   width:30%;
+   position:fixed;
+   display:block;
+   width:30%;
+   background-color:#ffffff;
+   height:100%;
+   padding-right:20px;
+}
+#content{
+   width:40%;
+}
+#sidebar2{
+   width:30%;
+   position:fixed;
+   margin-left:70%;
+   display:block;   
+   background-color:#ffffff;
+   height:100%;
+   padding-left: 9px;
+}
+.infinite-list-item {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 120px;
+    margin: auto;
+	display:block;
+	overflow:hidden;
+}
+#custom-bootstrap-menu {
+    
+    background-color: #6848c7;
+	color:#ffffff;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+}
+.navbar-header{
+    padding-left:20%;
+}
+#right-align{
+    padding-right:20%;
+}
+#infinite-content{
+    margin-left:30%;
+    width:40%;
+}
+

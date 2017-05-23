@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+._2md {
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yG/r/KeOCXMR_73K.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -251px;
+    display: block;
+    height: 24px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    white-space: nowrap;
+    width: 24px;
+}
+.float_left{
+   float:left;
+}
+
+#sidebar1{
+   width:30%;
+   position:fixed;
+}
+#content{
+   width:40%;
+}
+#sidebar2{
+   width:30%;
+   position:fixed;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" style="position:fixed;">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>    
+  </div>
+  <a class="navbar-brand" href="#">Brand</a>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-left">
+	    <li><h1 class="_19ea" data-click="bluebar_logo"><a class="_19eb" data-gt="{&quot;chrome_nav_item&quot;:&quot;logo_chrome&quot;}" href="https://www.facebook.com/?ref=logo" data-testid="blue_bar_fb_logo"><span class="_2md">Facebook</span></a></h1></li>
+        <li><a href="#">Left</a></li>
+        <li><a href="#about">Left</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#about">Right</a></li>
+      <li><a href="#contact">Right</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="container">
+  <div id="inner">
+    <div id="sidebar1" class="float_left">
+	  <nav>
+       <ul>
+           <li><a href="#">London</a></li>
+           <li><a href="#">Paris</a></li>
+           <li><a href="#">Tokyo</a></li>
+       </ul>
+      </nav>
+	</div>
+    <div id="content" class="float_left">
+	</div>
+    <div id="sidebar2" class="float_left">
+	  <nav>
+       <ul>
+           <li><a href="#">London</a></li>
+           <li><a href="#">Paris</a></li>
+           <li><a href="#">Tokyo</a></li>
+       </ul>
+      </nav>
+	</div>
+  </div>
+</div>
+</body>
+</html>
